@@ -46,7 +46,7 @@ main{
     display: inline-block;
     height: calc(100vh - 70px);
     width: 100%;
-    background-image: url();
+    background-image: url(../Multimedia/fondo.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -75,31 +75,39 @@ footer{
 
 /* Inicio */
 
+#main__index{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 1fr;
+}
+
 .divnovedades{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.651);
+    margin-left: 50px;
+    padding: 20px;
     color: white;
-    width: 40%;
-    margin: 30px;
-    background-color: rgba(0, 0, 0, 0.692);
-    height: 250px;
-    text-align: center;
-    border: 3px solid white;
-    padding: 15px;
-    text-transform: capitalize;
+    text-align: justify;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
 }
 
 #novedades{
     font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .call{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 50%;
+    width: 85%;
+    height: 240px;
     color: white;
     font-size: 15px;
     background-color: rgba(0, 0, 0, 0.781);
     border: 3px solid white;
-    float: right;
     margin: 30px;
     padding: 30px;
 }
@@ -254,14 +262,13 @@ div .artistas{
 
 /* Contacto */
 
-#formulario__contacto{
+.formulario{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    padding-top: 90px;
-    padding-left: 500px;
     text-shadow: 0 0 5px black;
-    text-transform: capitalize;
-    font-weight: bold;
 }
 
 /* Tour */
