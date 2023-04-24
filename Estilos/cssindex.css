@@ -7,16 +7,14 @@
 /* Estilo Principal */
 
 .head{
-    display: flex;
-    min-height: 70px;
-    width: 100%;
     background-color: black;
-    padding: 20px;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    margin: 0 auto;
+    display: flex;
     justify-content: space-between;
+    padding: 20px;
+    height: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    align-items: center;
 }
 
 .logo img{
@@ -29,8 +27,9 @@ ul li{
     display: flex;
     font-weight: 600;
     padding: 5px;
-    display: inline-block;
-    text-transform: capitalize;
+    padding-top: 10px;
+    display: inline;
+    text-transform: uppercase;
 }
 
 ul a{
@@ -43,16 +42,13 @@ ul a:hover{
 }
 
 main{
-    display: inline-block;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 80px);
     width: 100%;
     background-image: url(../Multimedia/fondo.jpg);
-    background-size: cover;
     background-position: center;
 }
 
 footer{
-    position: relative;
     text-align: center;
     font-size: 30px;
     background-color: black;
@@ -141,68 +137,57 @@ footer{
 
 /* Historia */
 
-.main_historia{
-    height: calc(100vh - 70px);
-    width: 100%;
-    background-image: url(/Multimedia/hd-wallpaper-1056764_1920.jpg);
-    background-size: cover;
-    background-position: center;
+.main__historia{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30% 20% 50%;
+    grid-template-areas: 
+    "historia historia historia"
+    "h3 h3 h3"
+    "videos videos videos";
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .historia{
-    width: auto;
-    height: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.733);
-    margin-left: auto;
-    margin-right: auto;
+    grid-area: historia;
+    background-color: rgba(0, 0, 0, 0.521);
+    height: 100%;
 }
 
-.titulo__historia{
-    font-weight: 600;
-    font-size: 30px;
-    padding-top: 40px;
-    padding-bottom: 20px;
+.historia h2{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
     text-transform: uppercase;
-    text-shadow: 0 0 5px black;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
 
 #resumen{
+    text-align: center;
     font-style: italic;
-    padding-left: 80px;
-    padding-right: 80px;
-    text-align: center;
-    text-transform: capitalize;
-    padding-bottom: 10px;
 }
 
-#h3__historia{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 22px;
-    color: white;
-    margin-bottom: 10px;
-    text-shadow: 0 0 5px black;
+.titulo__videoclips{
+    grid-area: h3;
+    justify-content: center;
 }
 
-#videos{
-    text-align: center;
-    display: inline-block;
-    padding-left: 68px;
+.videoclips{
+    grid-area: videos;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.video{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Artistas */
-
-.main_artistas{
-    height: calc(100vh - 70px);
-    width: 100%;
-    background-image: url(/Multimedia/hd-wallpaper-1056764_1920.jpg);
-    background-size: cover;
-    background-position: center;
-}
 
 div .artistas{
     display: inline-block;
@@ -265,35 +250,12 @@ div .artistas{
 .formulario{
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     text-shadow: 0 0 5px black;
+    padding-top: 60px;
 }
 
 /* Tour */
 
-.tour{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgba(0, 0, 0, 0.534);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 22px;
-    line-height: 32px;
-    font-weight: bold;
-}
-
-.tour a{
-    font-weight: 300;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    padding: 3px;
-    border: 2px solid black;
-}
-
-.tour a:hover{
-    background-color: white;
-    color: black;
-}
