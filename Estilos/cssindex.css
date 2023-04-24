@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo Principal */
+
+.head{
+    display: flex;
+    min-height: 70px;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.logo img{
+    display: flex;
+    height: 30px;
+    width: auto;
+}
+
+ul li{
+    display: flex;
+    font-weight: 600;
+    padding: 5px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+ul a{
+    color: white;
+    text-decoration: none;
+}
+
+ul a:hover{
+    color: #505050;
+}
+
+main{
+    display: inline-block;
+    height: calc(100vh - 70px);
+    width: 100%;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+footer{
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.redes i{
+    color: white;
+    font-size: 40px;
+    padding: 15px;
+}
+
+.redes i:hover{
+    color: #505050
+}
+
+/* Inicio */
+
+.divnovedades{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    width: 40%;
+    margin: 30px;
+    background-color: rgba(0, 0, 0, 0.692);
+    height: 250px;
+    text-align: center;
+    border: 3px solid white;
+    padding: 15px;
+    text-transform: capitalize;
+}
+
+#novedades{
+    font-weight: 600;
+}
+
+.call{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+    color: white;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.781);
+    border: 3px solid white;
+    float: right;
+    margin: 30px;
+    padding: 30px;
+}
+
+.call p{
+    margin-bottom: 20px;
+}
+
+#titulo__call{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.call a{
+    padding: 10px 10px;
+    width: auto;
+    background-color: black;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.call a:hover{
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+
+/* Historia */
+
+.main_historia{
+    height: calc(100vh - 70px);
+    width: 100%;
+    background-image: url(/Multimedia/hd-wallpaper-1056764_1920.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.historia{
+    width: auto;
+    height: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.733);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulo__historia{
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px black;
+}
+
+#resumen{
+    font-style: italic;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+#h3__historia{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px black;
+}
+
+#videos{
+    text-align: center;
+    display: inline-block;
+    padding-left: 68px;
+}
+
+/* Artistas */
+
+.main_artistas{
+    height: calc(100vh - 70px);
+    width: 100%;
+    background-image: url(/Multimedia/hd-wallpaper-1056764_1920.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+div .artistas{
+    display: inline-block;
+    margin-inline: 20px;
+}
+
+.artistas{
+    padding-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 100px;
+    padding-right: 100px;
+    }
+
+#cro{
+    float: left;
+    max-width: 450px;
+    height: 500px;
+    background-color: black;
+    align-items: center;
+    overflow: auto;
+}
+
+#cro p{
+    text-align: center;
+    color: white;
+}
+
+#fotocro{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: auto;
+    width: 95%;
+}
+
+#homer{
+    float: right;
+    max-width: 450px;
+    height: 500px;
+    background-color: black;
+    align-items: center;
+    overflow: auto;
+}
+
+#fotohomer{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: auto;
+    width: 95%;
+}
+
+#homer p{
+    text-align: center;
+    color: white;
+}
+
+/* Contacto */
+
+#formulario__contacto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    padding-top: 90px;
+    padding-left: 500px;
+    text-shadow: 0 0 5px black;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+/* Tour */
+
+.tour{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(0, 0, 0, 0.534);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.tour a{
+    font-weight: 300;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+    border: 2px solid black;
+}
+
+.tour a:hover{
+    background-color: white;
+    color: black;
+}
