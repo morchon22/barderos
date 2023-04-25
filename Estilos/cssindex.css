@@ -50,19 +50,22 @@ main{
 
 footer{
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     background-color: black;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: capitalize;
-    padding: 10px;
     text-decoration: none;
+    justify-content: center;
+    padding-top: 10px;
 }
 
 .redes i{
     color: white;
-    font-size: 40px;
-    padding: 15px;
+    font-size: 35px;
+    padding: 10px;
+    display: inline-flex;
+    justify-content: center;
 }
 
 .redes i:hover{
@@ -137,54 +140,53 @@ footer{
 
 /* Historia */
 
-.main__historia{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 30% 20% 50%;
-    grid-template-areas: 
-    "historia historia historia"
-    "h3 h3 h3"
-    "videos videos videos";
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 .historia{
-    grid-area: historia;
-    background-color: rgba(0, 0, 0, 0.521);
-    height: 100%;
+    width: auto;
+    height: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.733);
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.historia h2{
-    padding-top: 10px;
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
+.titulo__historia{
+    font-weight: 600;
     font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px black;
 }
 
 #resumen{
-    text-align: center;
     font-style: italic;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 10px;
 }
 
-.titulo__videoclips{
-    grid-area: h3;
-    justify-content: center;
+.h3__historia{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px black;
 }
 
 .videoclips{
-    grid-area: videos;
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
 }
 
 .video{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 15px;
 }
 
 /* Artistas */
@@ -259,3 +261,22 @@ div .artistas{
 
 /* Tour */
 
+.tour{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+    padding: 30px;
+    text-shadow: 0 0 7px black;
+    font-size: 20px;
+}
+
+.tour a{
+    margin-top: 3px;
+    background-color: black;
+    color: white;
+    padding: 3px;
+    font-size: 14px;
+    border: solid 3px black;
+}
