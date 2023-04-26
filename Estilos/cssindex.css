@@ -48,7 +48,7 @@ ul a:hover{
 }
 
 main{
-    height: calc(100vh - 80px);
+    height: 100vh;
     width: 100%;
     background-image: url(../Multimedia/fondo.jpg);
     background-position: center;
@@ -64,6 +64,7 @@ footer{
     text-decoration: none;
     justify-content: center;
     padding-top: 10px;
+    width: 100%;
 }
 
 .redes i{
@@ -85,13 +86,33 @@ footer{
     }
 }
 
-@media (max-width:379px){
+@media (max-width:526px){
     .head{
         flex-direction: column;
         font-size: 14px;
         align-items: center;
         justify-content: center;
         padding: 10px;
+    }
+}
+
+@media (max-width:380px){
+    .head{
+        flex-direction: column;
+        font-size: 12px;
+        align-items: center;
+        justify-content: center;
+        padding: 3px;
+    }
+}
+
+@media (max-width:328px){
+    .head{
+        flex-direction: column;
+        font-size: 12px;
+        align-items: center;
+        justify-content: center;
+        padding: 3px;
     }
 }
 
@@ -114,6 +135,16 @@ footer{
     text-align: justify;
     border-left: 3px solid white;
     border-right: 3px solid white;
+    overflow-y: scroll;
+}
+
+.divnovedades img{
+    width: 95%;
+    padding-block: 20px;
+}
+
+.divnovedades p{
+    font-weight: 600;
 }
 
 #novedades{
@@ -161,10 +192,58 @@ footer{
     font-weight: 600;
 }
 
+@media (max-width:526px){
+    #main__index{
+        justify-content: center;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .call{
+        margin: 10px;
+        padding: 10px;
+        width: 96%;
+        height: auto;
+    }
+
+    .divnovedades{
+        width: 96%;
+        margin-left: 8px;
+    }
+
+    .call a{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:379px){
+    #main__index{
+        justify-content: center;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .call{
+        margin: 10px;
+        padding: 10px;
+        width: 96%;
+        height: auto;
+    }
+
+    .divnovedades{
+        width: 96%;
+        margin-left: 8px;
+    }
+
+    .call a{
+        font-size: 13px;
+    }
+}
+
 /* Historia */
 
 .historia{
-    width: auto;
+    width: 100%;
     height: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -177,8 +256,8 @@ footer{
 .titulo__historia{
     font-weight: 600;
     font-size: 30px;
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     text-transform: uppercase;
     text-shadow: 0 0 5px black;
 }
@@ -189,10 +268,11 @@ footer{
     padding-right: 80px;
     text-align: center;
     text-transform: capitalize;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .h3__historia{
+    padding-top: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
     text-align: center;
@@ -203,56 +283,258 @@ footer{
     text-shadow: 0 0 5px black;
 }
 
-.videoclips{
-    display: flex;
-    justify-content: center;
-}
+@media (max-width:379px){
+    .titulo__historia{
+        font-size: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 
-.video{
-    padding: 15px;
+    #resumen{
+        font-size: 12px;
+        padding: 10px;
+        padding-top: 0;
+    }
 }
 
 /* Artistas */
 
-.artistas{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr ;
-    grid-template-areas: 
-    "cro homer"
-    "cro homer"
-    ;
+#artistas{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
     color: white;
-    margin-left: 50px;
+    text-shadow: 0 0 5px black;
+    padding-top: 100px;
 }
 
-#cro{
-    grid-area: cro;
-    background-color: black;
-    margin-top: 20px;
-    width: 80%;
-    height: 500px;
+.fotos{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    color: white;
 }
 
-#homer{
-    grid-area: homer;
+.artbard p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    text-shadow: 0 0 5px black;
+    padding-top: 5px;
+}
+
+#cromain{
+    height: 200px;
+    width: auto;
+    padding-inline: 10px;
+}
+
+#homermain{
+    height: 200px;
+    width: auto;
+    padding-inline: 10px;
+}
+
+#frankymain{
+    height: 200px;
+    width: auto;
+    padding-inline: 10px;
+}
+
+#chulumain{
+    height: 200px;
+    width: auto;
+    padding-inline: 10px;
+}
+
+#trocamain{
+    height: 200px;
+    width: auto;
+    padding-inline: 10px;
+}
+
+.sec{
+    text-align: center;
     background-color: black;
-    margin-top: 20px;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+}
+
+section.cont{
+    height: 700px;
+    width: 100%;
+    background: #505050;
 }
 
 #fotocro{
-    height: 200px;
-    width: 237px;
+    height: 250px;
+    width: auto;
+}
+
+.cont1{
+    padding: 25px;
+    color: white;
+    font-style: italic;
+}
+
+.cont1 p{
+    padding-top: 10px;
 }
 
 #fotohomer{
-    height: 200px;
-    width: 237px;
+    height: 250px;
+    width: auto;
+}
+
+.cont2{
+    padding: 25px;
+    color: white;
+    font-style: italic;
+}
+
+.cont2 p{
+    padding-top: 10px;
+}
+
+#fotofranky{
+    height: 250px;
+    width: auto;
+}
+
+.cont3{
+    padding: 25px;
+    color: white;
+    font-style: italic;
+}
+
+.cont3 p{
+    padding-top: 10px;
+}
+
+#fotochulu{
+    height: 250px;
+    width: auto;
+}
+
+.cont4{
+    padding: 25px;
+    color: white;
+    font-style: italic;
+}
+
+.cont4 p{
+    padding-top: 10px;
+}
+
+#fototroca{
+    height: 250px;
+    width: auto;
+}
+
+.cont5{
+    padding: 25px;
+    color: white;
+    font-style: italic;
+}
+
+.cont5 p{
+    padding-top: 10px;
+}
+
+@media (max-width:985px){
+    .cont{
+        overflow: auto;
+    }
+}
+
+@media (max-width:379px){
+    #fotocro{
+        height: 100px;
+        width: auto;
+    }
+    
+    .cont1{
+        overflow: auto;
+        padding: 10px;
+        color: white;
+        font-style: italic;
+    }
+    
+    .cont1 p{
+        padding-top: 10px;
+        font-size: 14px;
+    }
+
+    #fotohomer{
+        height: 100px;
+        width: auto;
+    }
+    
+    .cont2{
+        overflow: auto;
+        padding: 10px;
+        color: white;
+        font-style: italic;
+    }
+    
+    .cont2 p{
+        padding-top: 10px;
+        font-size: 14px;
+    }
+
+    #fotofranky{
+        height: 100px;
+        width: auto;
+    }
+    
+    .cont3{
+        overflow: auto;
+        padding: 10px;
+        color: white;
+        font-style: italic;
+    }
+    
+    .cont3 p{
+        padding-top: 10px;
+        font-size: 14px;
+    }
+
+    #fotochulu{
+        height: 100px;
+        width: auto;
+    }
+    
+    .cont4{
+        overflow: auto;
+        padding: 10px;
+        color: white;
+        font-style: italic;
+    }
+    
+    .cont4 p{
+        padding-top: 10px;
+        font-size: 14px;
+    }
+
+    #fototroca{
+        height: 100px;
+        width: auto;
+    }
+    
+    .cont5{
+        overflow: auto;
+        padding: 10px;
+        color: white;
+        font-style: italic;
+    }
+    
+    .cont5 p{
+        padding-top: 10px;
+        font-size: 14px;
+    }
 }
 
 /* Contacto */
@@ -271,7 +553,7 @@ footer{
 
 .tour{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
     color: white;
     padding: 10px;
@@ -288,12 +570,14 @@ footer{
     border: solid 3px black;
 }
 
-@media (max-width:379px){
+@media (max-width:526px){
     .tour{
         font-size: 18px;
+        align-items: center;
     }
 
     .tour a{
+        align-items: center;
         font-size: 13px;
     }
 }
