@@ -7,14 +7,15 @@
 /* Estilo Principal */
 
 .head{
+    display: flex;
     background-color: black;
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    height: 80px;
+    min-height: 80px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    align-items: center;
+    width: 100%;
 }
 
 .logo img{
@@ -23,13 +24,18 @@
     width: auto;
 }
 
+ul{
+    margin: 0;
+    padding: 0;
+}
+
 ul li{
     display: flex;
     font-weight: 600;
     padding: 5px;
     padding-top: 10px;
     display: inline;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 ul a{
@@ -70,6 +76,23 @@ footer{
 
 .redes i:hover{
     color: #505050
+}
+
+@media (max-width:761px){
+    .head{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:379px){
+    .head{
+        flex-direction: column;
+        font-size: 14px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
 }
 
 /* Inicio */
@@ -191,60 +214,45 @@ footer{
 
 /* Artistas */
 
-div .artistas{
-    display: inline-block;
-    margin-inline: 20px;
-}
-
 .artistas{
-    padding-top: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-left: 100px;
-    padding-right: 100px;
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: 
+    "cro homer"
+    "cro homer"
+    ;
+    color: white;
+    margin-left: 50px;
+}
 
 #cro{
-    float: left;
-    max-width: 450px;
-    height: 500px;
+    grid-area: cro;
     background-color: black;
-    align-items: center;
-    overflow: auto;
-}
-
-#cro p{
-    text-align: center;
-    color: white;
-}
-
-#fotocro{
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    height: auto;
-    width: 95%;
+    margin-top: 20px;
+    width: 80%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
 }
 
 #homer{
-    float: right;
-    max-width: 450px;
-    height: 500px;
+    grid-area: homer;
     background-color: black;
-    align-items: center;
-    overflow: auto;
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+#fotocro{
+    height: 200px;
+    width: 237px;
 }
 
 #fotohomer{
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    height: auto;
-    width: 95%;
-}
-
-#homer p{
-    text-align: center;
-    color: white;
+    height: 200px;
+    width: 237px;
 }
 
 /* Contacto */
@@ -265,11 +273,10 @@ div .artistas{
     display: flex;
     justify-content: space-around;
     text-align: center;
-    padding-top: 40px;
     color: white;
-    padding: 30px;
+    padding: 10px;
     text-shadow: 0 0 7px black;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .tour a{
@@ -277,6 +284,16 @@ div .artistas{
     background-color: black;
     color: white;
     padding: 3px;
-    font-size: 14px;
+    font-size: 16px;
     border: solid 3px black;
+}
+
+@media (max-width:379px){
+    .tour{
+        font-size: 18px;
+    }
+
+    .tour a{
+        font-size: 13px;
+    }
 }
