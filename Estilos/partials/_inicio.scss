@@ -1,0 +1,128 @@
+#main__index{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 1fr;
+
+    .divnovedades{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        height: 100%;
+        width: 90%;
+        background-color: rgba(0, 0, 0, 0.651);
+        margin-left: 50px;
+        padding: 20px;
+        color: white;
+        text-align: justify;
+        border-left: 3px solid white;
+        border-right: 3px solid white;
+        overflow-y: scroll;
+
+        img{
+            width: 95%;
+            padding-block: 20px;
+        }
+
+        p{
+            font-weight: 600;
+        }
+
+        #novedades{
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+    
+    .call{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 85%;
+        height: 240px;
+        color: white;
+        font-size: 15px;
+        background-color: rgba(0, 0, 0, 0.781);
+        border: 3px solid white;
+        margin: 30px;
+        padding: 30px;
+
+        p{
+            margin-bottom: 20px;
+        }
+
+        #titulo__call{
+            font-size: 22px;
+            margin-bottom: 20px;
+            text-transform: capitalize;
+        }
+
+        a{
+            padding: 10px 10px;
+            width: auto;
+            background-color: black;
+            font-size: 16px;
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 600;
+
+            &:hover {
+                background-color: white;
+                color: black;
+                font-weight: 600;
+            }
+        }
+    }
+
+    
+}
+
+@media (max-width:526px){
+    #main__index{
+        justify-content: center;
+        display: flex;
+        flex-direction: column-reverse;
+
+        .call{
+            margin: 10px;
+            padding: 10px;
+            width: 96%;
+            height: auto;
+        }
+    
+        .divnovedades{
+            width: 96%;
+            margin-left: 8px;
+        }
+    
+        .call a{
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width:379px){
+    #main__index{
+        justify-content: center;
+        display: flex;
+        flex-direction: column-reverse;
+
+        #titulo__call{
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .call{
+            margin: 10px;
+            padding: 10px;
+            width: 96%;
+            height: auto;
+        }
+
+        .divnovedades{
+            width: 96%;
+            margin-left: 10px;
+        }
+    
+        .call a{
+            font-size: 13px;
+        }
+    }
+    }

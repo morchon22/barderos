@@ -1,0 +1,53 @@
+.historia{
+    width: 100%;
+    height: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.733);
+    margin-left: auto;
+    margin-right: auto;
+
+    .titulo__historia{
+        font-weight: 600;
+        font-size: 30px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        text-shadow: 0 0 5px black;
+    }
+
+    #resumen{
+        font-style: italic;
+        padding-left: 20px;
+        text-transform: capitalize;
+        padding-bottom: 15px;
+        text-align: left;
+    }
+}
+
+.galeria{
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px black;
+}
+
+@media (max-width:379px){
+    .titulo__historia{
+        font-size: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        #resumen{
+            font-size: 12px;
+            padding: 10px;
+            padding-top: 0;
+        }
+    }
+}

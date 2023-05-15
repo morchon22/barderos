@@ -1,0 +1,27 @@
+footer{
+    text-align: center;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    justify-content: center;
+    padding-top: 10px;
+    width: 100%;
+
+    .redes{
+
+        i{
+            color: white;
+            font-size: 35px;
+            padding: 10px;
+            display: inline-flex;
+            justify-content: center;
+
+            &:hover {
+                color: #505050
+            }
+        }
+    }
+}
