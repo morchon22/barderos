@@ -123,7 +123,8 @@ main {
 }
 #main__index .call #titulo__call {
   font-size: 22px;
-  margin-bottom: 20px;
+  padding-top: 0;
+  margin-bottom: 10px;
   text-transform: capitalize;
 }
 #main__index .call a {
